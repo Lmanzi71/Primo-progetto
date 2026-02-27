@@ -3,65 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Anime Page</title>
+    <title>Samurai Spirit ⚔️</title>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     
     <style>
         body {
-            /* Sfondo con un Pokémon (Gengar in questo esempio) */
             background-image: url('https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png');
             background-repeat: no-repeat;
-            background-position: center bottom;
-            background-size: contain;
+            background-position: center 80%;
+            background-size: 80%;
             background-attachment: fixed;
-            background-color: #1a1a1a; /* Sfondo scuro per far risaltare tutto */
-            color: #ff0000; /* Rosso acceso */
-            font-family: 'Bangers', system-ui, sans-serif;
+            background-color: #000; /* Nero assoluto */
+            color: #fff;
+            font-family: 'Bangers', cursive;
             text-align: center;
-            min-height: 100vh;
             margin: 0;
-            padding: 20px;
+            overflow-x: hidden;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.7); /* Rettangolo nero semitrasparente */
-            padding: 20px;
-            border-radius: 15px;
-            border: 2px solid #ff0000;
-            display: inline-block;
-            margin-top: 50px;
+            background: rgba(255, 0, 0, 0.1); /* Sfumatura rossa leggerissima */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid #ff0000;
+            box-sizing: border-box;
         }
 
         h1 {
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            text-shadow: 3px 3px #fff;
+            font-size: 4rem;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+            margin: 10px 0;
+            animation: pulse 1.5s infinite alternate;
         }
 
+        /* Nuova Katana funzionante */
         .katana {
-            width: 300px;
+            width: 250px;
+            filter: drop-shadow(0 0 5px #fff);
+            transform: rotate(-15deg);
             margin: 20px 0;
-            /* Effetto rotazione per renderla più "cool" */
-            transform: rotate(-10deg);
-            filter: drop-shadow(0 0 10px #ff0000);
         }
 
         p {
-            font-size: 1.5rem;
-            color: #fff;
+            font-size: 1.8rem;
+            background: #ff0000;
+            color: #000;
+            padding: 5px 15px;
+            transform: skewX(-10deg); /* Effetto inclinato stile manga */
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); text-shadow: 0 0 10px #ff0000; }
+            to { transform: scale(1.1); text-shadow: 0 0 30px #ff0000, 0 0 40px #ff4d4d; }
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>SAMURAI SPIRIT ⚔️</h1>
+        <h1>SAMURAI SPIRIT</h1>
         
-        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055653.png" alt="Katana" class="katana">
+        <img src="https://www.svgrepo.com/show/418525/katana-sword-weapon.svg" alt="Katana" class="katana">
         
         <p>Il mio primo sito in stile Anime</p>
-        <p>私のアニメサイト (Il mio sito anime)</p>
+        <p style="background: white; margin-top: 10px;">私のアニメサイト</p>
     </div>
 
 </body>
